@@ -4,13 +4,16 @@
 https://ahmad-ali-exercise-tracker-1--ahmadali5.repl.co
 
 ### In this project: 
-create a new user by submitting a username.
+1- create a new user by submitting a username.
 
-add activity documents to that particular user using his ID.
+2- add activity documents to that particular user using his ID.
 
-Track all user activities saved in the database.
+3- Track all user activities saved in the database.
 
-Get all users data in the database by one click.
+4- Get all users data in the database by one click.
+
+### video 
+[![Express tracking API](http://img.youtube.com/vi/s5eMXVA20pY/0.jpg)](http://www.youtube.com/watch?v=s5eMXVA20pY "Express tracking API")
 
 
 ### my portfolio:
