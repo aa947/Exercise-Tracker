@@ -1,12 +1,17 @@
-# Exercise Tracker REST API
+# Exercise Tracking API
 
-#### A microservice project, part of Free Code Camp's curriculum
+### live at 
+https://ahmad-ali-exercise-tracker-1--ahmadali5.repl.co
 
-### User Stories
+### In this project: 
+create a new user by submitting a username.
 
-1. I can create a user by posting form data username to /api/exercise/new-user and returned will be an object with username and _id.
-2. I can get an array of all users by getting api/exercise/users with the same info as when creating a user.
-3. I can add an exercise to any user by posting form data userId(_id), description, duration, and optionally date to /api/exercise/add. If no date supplied it will use current date. Returned will be the user object with also with the exercise fields added.
-4. I can retrieve a full exercise log of any user by getting /api/exercise/log with a parameter of userId(_id). Return will be the user object with added array log and count (total exercise count).
-5. I can retrieve part of the log of any user by also passing along optional parameters of from & to or limit. (Date format yyyy-mm-dd, limit = int)
-[![Run on Repl.it](https://repl.it/badge/github/aa947/ahmad-ali-exercise-tracker)](https://repl.it/github/aa947/ahmad-ali-exercise-tracker)
+add activity documents to that particular user using his ID.
+
+Track all user activities saved in the database.
+
+Get all users data in the database by one click.
+
+
+### my portfolio:
+http://www.ahmad-ali.co.uk/
