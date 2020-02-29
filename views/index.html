@@ -1,35 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-   <head>
-      <title>Exercise Tracker | Free Code Camp</title>
-      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
-      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-      <link href="style.css" rel="stylesheet" type="text/css">
-   </head>
+<head>
+	<meta charset="utf-8">
+	<title>Exer API</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-   <body>
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	 crossorigin="anonymous">
+	<!-- 
+  fancy box
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" /> -->
+
+
+
+	<!-- jquery slim -->
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     -->
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+		<div class="container">
+			<a class="navbar-brand" href="/">
+				<img src="https://dl.dropbox.com/s/ef6bd77m47iz2w6/mw100.png?dl=0" width="50px" />
+       <h3 style="display:inline; padding-left:3%; " > Exercise Tracking API By Ahmad Ali </h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="nav navbar-nav">
+           
+             
+            <!-- <li class="nav-item active">
+              <a class="nav-link" href="#userstories"> About
+                <span class="sr-only">(current)</span>
+              </a>
+            </li> -->
+        
+        </ul>
+         <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about"> About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+           <li class="nav-item active">
+            <a class="nav-link" href="http://ahmad-ali.co.uk/" target="_blank" > My Portfolio
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          </ul>
+
+       
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+     
+
+         <hr style='margin: 50px'>
+
+
+  <!-- Page Content -->
+
+
+
       <div class="container">
-         <h1>Exercise tracker</h1>
+         <!-- <h1>Exercise Tracking API</h1> -->
+         <h2 id="about" > Instrcutions: </h2>
+         <ol>
+           <li> Get userId by checking users List or Create new user. </li>
+           <li> use that userId to submit exercises to that user. </li>
+          
+
+           </ol>
+           <h3> Note: All responses are in JSON </h3>
+
+            <hr style='margin: 50px'>
+            <h3> Get a list of users <h3>
+            <p><code>response is an array of JSON ojects contains every user with all of his data </code></p>
+
+            <a href="/users"><button class="btn btn-primary">All users Data </button> </a>
+           <hr style='margin: 50px'>
           <form action="/api/exercise/new-user" method="post">
             <h3>Create a New User</h3>
-            <p><code>POST /api/exercise/new-user</code></p>
+            <p><code>Response is User object, submit a username, save userId from response and come back to this page</code></p>
             <input id="uname" type="text" name="username" placeholder="username">
             <input type="submit" value="Submit">
           </form>
+
+           <hr style='margin: 50px'>
+
+           
           <form action="/api/exercise/add" method="post">
-            <h3>Add exercises</h3>
-            <p><code>POST /api/exercise/add</code></p>
+            <h3>Add exercises to a user profile </h3>
+            <p><code>use userId grapped from previous instructions, Response is a JSON object contains All user's Data. </code></p>
             <input id="uid" type="text" name="userId" placeholder="userId*">
             <input id="desc" type="text" name="description" placeholder="description*">
             <input id="dur" type="text" name="duration" placeholder="duration* (mins.)">
             <input id="dat" type="text" name="date" placeholder="date (yyyy-mm-dd)">
             <input type="submit" value="Submit">
           </form>
-          <p><strong>GET users's exercise log: </strong><code>GET /api/exercise/log?{userId}[&amp;from][&amp;to][&amp;limit]</code></p>
-          <p><strong>{ }</strong> = required, <strong>[ ]</strong> = optional</p>
-          <p><strong>from, to</strong> = dates (yyyy-mm-dd); <strong>limit</strong> = number</p>
-      </div>
-   </body>
+
+                    
+
+         
+ 
+
+<!-- footer  -->
+<br /> <br /> <br />
+<hr />
+<p class="text-center"> &COPY; Ahmad Ali </p>
+
+<!-- Bootstrap core JavaScript -->
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- fancy box js -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+</body>
 
 </html>
